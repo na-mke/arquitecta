@@ -6,7 +6,7 @@ Wordpress child theme, based on [Infrastrukt](http://github.com/rediris/infrastr
 
 ### Preparing
 Make sure you have the most recent NPM installed.
-In the infrastrukt directory, run these commands:
+In the arquitectura directory, run these commands:
 
 - `npm install`
 - `bower install`
