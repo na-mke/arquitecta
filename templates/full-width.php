@@ -5,21 +5,20 @@
  */
 
 get_header(); ?>
-<!-- Begin Page -->
-<div class="row">
-    <!-- Main Content -->
-    <div class="large-12 columns" role="content">
 
-		<?php if ( have_posts() ) : ?>
+<div class="content-block">
+  <div class="row">
+    <div class="column columns small-12" role="content">
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'page' ); ?>
-			<?php endwhile; ?>
-			
-		<?php endif; ?>
+  	<?php if ( have_posts() ) : ?>
 
-    </div>
-    <!-- End Main Content -->
-</div>
-<!-- End Page -->
+  		<?php while ( have_posts() ) : the_post(); ?>
+  			<?php get_template_part( 'content', 'page' ); ?>
+  		<?php endwhile; ?>
+  		
+  	<?php endif; ?>
+
+    </div><!--.columns-->
+  </div><!--.row-->
+</div><!--.content-block-->
 <?php get_footer(); ?>
