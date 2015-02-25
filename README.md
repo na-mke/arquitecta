@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Infrastrukt
 
 Infrastrukt is WordPress theme built on [Foundation 5](http://foundation.zurb.com/), by [Zurb](http://zurb.com/).
@@ -28,3 +29,7 @@ In the infrastrukt directory, run these commands:
 ### Adding Additional Dependencies
 - JavaScript library: `bower install -S [package]`
 - NodeJS package: `npm install --save-dev [package]`
+=======
+# arquitecta
+Wordpress child theme, based on @infrastrukt
+>>>>>>> Initial commit
