@@ -489,7 +489,7 @@ if ( ! function_exists( 'infrastrukt_comment' ) ) :
       global $post;
     ?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-      <article id="comment-<?php comment_ID(); ?>" class="comment">
+      <article id="comment-<?php comment_ID(); ?>" class="comment comment-<?php comment_ID(); ?>">
         <header>
           <?php
             echo "<span class='th alignleft'>";
@@ -601,87 +601,87 @@ if ( ! function_exists( 'infrastrukt_customize' ) ) :
         ),
   ) );
 
-    $wp_customize->add_section( 'infrastrukt_topbar_settings', array(
-      'title'           => __( 'Top Bar Settings', 'infrastrukt' ),
-      'priority'        => 35,
-    ) );
+  $wp_customize->add_section( 'infrastrukt_topbar_settings', array(
+    'title'           => __( 'Top Bar Settings', 'infrastrukt' ),
+    'priority'        => 35,
+  ) );
 
-    $wp_customize->add_setting( 'topbar_position', array(
-      'default'         => 'default',
-      'type'            => 'theme_mod',
-      'capability'      => 'edit_theme_options',
-      'sanitize_callback' => '',
-    ) );
+  $wp_customize->add_setting( 'topbar_position', array(
+    'default'         => 'default',
+    'type'            => 'theme_mod',
+    'capability'      => 'edit_theme_options',
+    'sanitize_callback' => '',
+  ) );
 
-    $wp_customize->add_control( 'topbar_position', array(
-        'label'         => __( 'Top Bar Position', 'infrastrukt' ),
-        'section'       => 'infrastrukt_topbar_settings',
-        'settings'      => 'topbar_position',
-        'type'          => 'radio',
-        'choices'       => array(
-              ''        => 'Default',
-              'sticky'  => 'Sticky',
-              'fixed'   => 'Fixed',
-              ),
-    ) );
+  $wp_customize->add_control( 'topbar_position', array(
+      'label'         => __( 'Top Bar Position', 'infrastrukt' ),
+      'section'       => 'infrastrukt_topbar_settings',
+      'settings'      => 'topbar_position',
+      'type'          => 'radio',
+      'choices'       => array(
+            ''        => 'Default',
+            'sticky'  => 'Sticky',
+            'fixed'   => 'Fixed',
+            ),
+  ) );
 
-    $wp_customize->add_setting( 'contain_to_grid', array(
-      'default'           => '',
-      'type'              => 'theme_mod',
-      'capability'        => 'edit_theme_options',
-      'sanitize_callback' => '',
-    ) );
+  $wp_customize->add_setting( 'contain_to_grid', array(
+    'default'           => '',
+    'type'              => 'theme_mod',
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => '',
+  ) );
 
-    $wp_customize->add_control( 'contain_to_grid', array(
-      'label'           => 'Contain To Grid',
-      'section'         => 'infrastrukt_topbar_settings',
-      'type'            => 'checkbox',
-      'value'           => 'contain_to_grid',
-    ) );
+  $wp_customize->add_control( 'contain_to_grid', array(
+    'label'           => 'Contain To Grid',
+    'section'         => 'infrastrukt_topbar_settings',
+    'type'            => 'checkbox',
+    'value'           => 'contain_to_grid',
+  ) );
 
-    $wp_customize->add_setting( 'clickable_menu', array(
-      'default'           => '',
-      'type'              => 'theme_mod',
-      'capability'        => 'edit_theme_options',
-      'sanitize_callback' => '',
-    ) );
+  $wp_customize->add_setting( 'clickable_menu', array(
+    'default'           => '',
+    'type'              => 'theme_mod',
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => '',
+  ) );
 
-    $wp_customize->add_control( 'clickable_menu', array(
-      'label'           => 'Clickable Top Bar',
-      'section'         => 'infrastrukt_topbar_settings',
-      'type'            => 'checkbox',
-    ) );
+  $wp_customize->add_control( 'clickable_menu', array(
+    'label'           => 'Clickable Top Bar',
+    'section'         => 'infrastrukt_topbar_settings',
+    'type'            => 'checkbox',
+  ) );
 
-    $wp_customize->add_setting( 'set_menu_title', array(
-      'default'           => 'Menu',
-      'type'              => 'theme_mod',
-      'capability'        => 'edit_theme_options',
-      'sanitize_callback' => '',
-    ) );
+  $wp_customize->add_setting( 'set_menu_title', array(
+    'default'           => 'Menu',
+    'type'              => 'theme_mod',
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => '',
+  ) );
 
-    $wp_customize->add_control( 'set_menu_title', array(
-      'label'           => 'Set Menu Title',
-      'section'         => 'infrastrukt_topbar_settings',
-      'type'            => 'text',
-    ) );
+  $wp_customize->add_control( 'set_menu_title', array(
+    'label'           => 'Set Menu Title',
+    'section'         => 'infrastrukt_topbar_settings',
+    'type'            => 'text',
+  ) );
 
-    $wp_customize->add_setting( 'background_size', array(
-      'default'           => 'auto',
-      'type'              => 'theme_mod',
-      'capability'        => 'edit_theme_options',
-      'sanitize_callback' => '',
-    ) );
+  $wp_customize->add_setting( 'background_size', array(
+    'default'           => 'auto',
+    'type'              => 'theme_mod',
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => '',
+  ) );
 
-    $wp_customize->add_control( 'background_size', array(
-      'label'           => 'Background Size',
-      'section'         => 'background_image',
-      'type'            => 'radio',
-      'choices'         => array(
-              'auto'    => 'Auto',
-              'cover'   => 'Cover',
-              'contain' => 'Contain',
-              ),
-    ) );
+  $wp_customize->add_control( 'background_size', array(
+    'label'           => 'Background Size',
+    'section'         => 'background_image',
+    'type'            => 'radio',
+    'choices'         => array(
+            'auto'    => 'Auto',
+            'cover'   => 'Cover',
+            'contain' => 'Contain',
+            ),
+  ) );
 
   // BEGIN OFFCANVAS
   $wp_customize->add_section( 'infrastrukt_offcanvas_settings', array(
@@ -798,7 +798,7 @@ function copyright_customizer( $wp_customize ) {
   $wp_customize->add_setting(
       'copyright_textbox',
       array(
-          'default' => 'Default copyright text',
+          'default' => '',
       )
   );
 

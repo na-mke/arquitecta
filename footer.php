@@ -42,11 +42,11 @@
           <?php wp_list_pages('title_li='); ?>
           </ul><!--.inline-list-->
         </div><!--.columns-->
-      <?php } 
+      <?php }
       if( get_theme_mod( 'hide_copyright' ) == ''): ?>
         <div class="large-12 columns">
           <div class="copyright">
-            <p>&copy; <?php echo date('Y'); ?> <?php echo get_theme_mod( 'copyright_textbox', 'No copyright information has been saved yet.', 'infrastrukt' ); ?></p>
+            <p>&copy; <?php echo date('Y'); ?> <?php echo get_theme_mod( 'copyright_textbox', null, 'infrastrukt' ); ?></p>
           </div><!--.copyright-->
         </div><!--.columns-->
       <?php endif; ?>
