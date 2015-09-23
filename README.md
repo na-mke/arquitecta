@@ -1,6 +1,5 @@
 # Arquitecta
-Wordpress child theme, based on [Infrastrukt](http://github.com/rediris/infrastrukt)
-
+Wordpress theme built with [Infrastrukt](http://github.com/rediris/infrastrukt)
 
 ## Developer use:
 
