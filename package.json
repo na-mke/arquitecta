@@ -1,12 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "infrastrukt-arquitecta",
-  "version": "1.0.0",
-  "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-autoprefixer": "^3.0.0",
-=======
-  "name": "infrastrukt",
   "version": "5.5.0",
   "devDependencies": {
     "node-sass": "~2.0.0-beta",
@@ -16,7 +9,6 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.7",
->>>>>>> 4203d01e3740125c1ddccb117486f96198e1092f
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-compress": "^0.13.0",
     "grunt-contrib-concat": "^0.5.0",
@@ -27,7 +19,6 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
-<<<<<<< HEAD
     "grunt-reload": "~0.2.0",
     "grunt-sass": "~0.18.1",
     "js-beautify": "^1.5.4",
@@ -39,13 +30,3 @@
     "url": "https://github.com/na-mke/arquitecta.git"
   }
 }
-=======
-    "load-grunt-tasks": "^2.0.0",
-    "js-beautify": "^1.5.4"
-  },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/rediris/infrastrukt.git"
-  }
-}
->>>>>>> 4203d01e3740125c1ddccb117486f96198e1092f
